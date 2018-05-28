@@ -1,0 +1,15 @@
+<div class="input-group center-input">
+  <span class="input-group-addon" id="basic-addon3">Password</span>
+  <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3" [(ngModel)]="passwordValue">
+</div>
+
+<div class="text-center">
+  <div class="btn-toolbar no-float-left" role="toolbar" aria-label="button" *ngFor="let group of keyboardArray">
+    <div class="btn-group no-float-left" role="group" aria-label="1">
+      <button type="button" class="btn btn-default" *ngFor="let item of group" (click)="bindClick(item)">{{item}}</button>
+    </div>
+  </div>
+  
+  <div class="alert alert-warning" role="alert" *ngIf="passwordValid">password is not correct</div>
+  <button class="col-2 btn btn-primary" (click)="login()">Login</button>
+</div>
