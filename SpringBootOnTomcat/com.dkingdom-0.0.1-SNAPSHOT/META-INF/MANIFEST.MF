@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringBootOnTomcat
+Implementation-Version: 0.0.1-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: dukai
+Implementation-Vendor-Id: com.dkingdom
+Spring-Boot-Version: 1.4.1.RELEASE
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: org.springframework.boot.loader.WarLauncher
+Start-Class: com.dkingdom.LaunchApplication
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/com.dkingdom
+ /
+
