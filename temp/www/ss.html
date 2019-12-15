@@ -1,0 +1,1140 @@
+<html><head><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-localstorage --><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for iron-meta-query --><!-- Shady DOM styles for paper-ripple --><style scope="paper-ripple">paper-ripple {
+  border-radius:inherit;bottom:0;display:block;left:0;overflow:hidden;pointer-events:none;position:absolute;right:0;top:0
+}
+
+paper-ripple[animating] {
+  -webkit-transform:translate(0);transform:translateZ(0)
+}
+
+#background.paper-ripple,#waves.paper-ripple,.wave.paper-ripple,.wave-container.paper-ripple {
+  height:100%;left:0;pointer-events:none;position:absolute;top:0;width:100%
+}
+
+#background.paper-ripple,.wave.paper-ripple {
+  opacity:0
+}
+
+#waves.paper-ripple,.wave.paper-ripple {
+  overflow:hidden
+}
+
+.wave.paper-ripple,.wave-container.paper-ripple,paper-ripple.circle #background.paper-ripple,paper-ripple.circle #waves.paper-ripple {
+  border-radius:50%
+}
+
+paper-ripple.circle .wave-container.paper-ripple {
+  overflow:hidden
+}</style><!-- Shady DOM styles for paper-radio-button --><!-- Shady DOM styles for paper-radio-group --><!-- Shady DOM styles for google-codelab-survey --><!-- Shady DOM styles for google-codelab-step --><style scope="google-codelab-step-0">.google-codelab-step-0 {
+  display:block;line-height:24px
+}
+
+.google-codelab-step-0 #title.google-codelab-step {
+  font-family:Google Sans,Arial,sans-serif;font-size:28px;font-weight:400;line-height:1em;margin:0 0 30px
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step {
+  background:#fff;border-radius:4px;box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);font-size:14px;margin:0 auto 32px;max-width:800px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step .inner.google-codelab-step {
+  padding:24px
+}
+
+google-codelab[theme=minimal] .google-codelab-step-0 .instructions.google-codelab-step .inner.google-codelab-step,.google-codelab-step-0  google-codelab-stepgoogle-codelab[theme=minimal] .instructions.google-codelab-step .inner.google-codelab-step {
+  padding:0 24px
+}
+
+@media (max-width:800px) {
+.google-codelab-step-0 .instructions.google-codelab-step {
+  margin:0 0 16px
+}
+
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  a,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  a,google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  a:visited,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  a:visited {
+  color:#1a73e8
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h2,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h2,google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h3,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h3,google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h4,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h4 {
+  font-weight:400;margin:0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h2,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h2 {
+  font-size:22px;font-weight:300;line-height:1em
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step ,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  {
+  line-height:24px
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  li,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  li {
+  margin:.5em 0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h2,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h2 {
+  font-size:20px;font-weight:500;margin:1.5em 0 0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h3,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h3 {
+  font-weight:500;margin:20px 0 0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside {
+  border-left:4px solid;border-radius:4px;margin:2em 0;padding:.5em 1em
+}
+
+:host-context(google-codelab:not([theme=minimal])) google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside p,.google-codelab-step-0  :host-context(google-codelab:not([theme=minimal])) google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside p {
+  margin:.5em 0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside.note,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside.note,google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside.notice,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside.notice {
+  background:#fef7e0;border-color:#ea8600;color:#212124;
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside.special,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside.special,google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside.tip,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside.tip {
+  background:#e6f4ea;border-color:#137333;color:#212124;
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  aside.warning,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  aside.warning {
+  background:#fef7e0;border-color:#ea8600;color:#212124;
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  aside.callout {
+  background-color:#e8f0fe;border-left:3px solid #185abc;border-radius:4px;color:#212124;font-size:14px;line-height:1.5;margin:20px 0;padding:15px;
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  aside.callout b {
+  color:#185abc
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  ul.checklist {
+  list-style:none;padding:0 0 0 1em
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  ul.checklist li {
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAWlBMVEUAAAAxokwwoks1pFAxokwxokwxokwxokwxokwnnkQnnkQnnkRou3y84cTS69cxokwonkQxokwnnkRqvH1VsmtluXlVsmsnnkRdtnLw+PIxokwqn0YinEAfmj3goh/UAAAAGnRSTlMA2CcEo+6AQT7+2IOBJxPl27alhoBnX15SCCe258UAAAB+SURBVEjH7dA5EoAgEERR3BcQ923Q+1/T0SqKlNbMouP3gxkRFvZpyQb64VSQT4mOcYc8mU5DnqIG8zXoozj4d34tML+YrET8XBFx4e2F4oAL4N7J3EUB/EfSUwD/zG3hvFdROu9XtL31vgXguQA9F6DnAvM8WbOHpkXYD3cBBCcPjtASYjwAAAAASUVORK5CYII=');background-repeat:no-repeat;background-size:20px;padding-left:24px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  h2 code,.google-codelab-step-0 .instructions.google-codelab-step  table code {
+  background:#fff
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  .indented {
+  margin-left:40px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  strong {
+  font-weight:600
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  paper-button {
+  border-radius:4px;color:#fff;font-family:Google Sans,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:.6px;padding:6px 16px 6px 12px;text-transform:none
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  paper-button a {
+  color:inherit!important;text-decoration:none
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  a paper-button {
+  display:inline-block
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  paper-button.colored {
+  background-color:#1e8e3e
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  paper-button.red {
+  background-color:#d93025
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  iron-icon {
+  max-height:16px;max-width:16px;padding-right:8px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  img {
+  max-width:100%;vertical-align:bottom;width:100%
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  table {
+  border-spacing:0
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  td {
+  border-bottom:1px solid #ccc;padding:8px;vertical-align:top
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  table p {
+  margin:0
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  h3.faq,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  h3.faq {
+  border-bottom:1px solid #ddd
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  ul.faq,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  ul.faq {
+  list-style:none;padding-left:1em
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  .faq li,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  .faq li {
+  font-size:1.1em;margin-bottom:.8em
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  .faq a,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  .faq a {
+  color:inherit;text-decoration:none
+}
+
+google-codelab:not([theme=minimal]) .google-codelab-step-0 .instructions.google-codelab-step  .faq a:hover,.google-codelab-step-0  google-codelab-stepgoogle-codelab:not([theme=minimal]) .instructions.google-codelab-step  .faq a:hover {
+  text-decoration:underline
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  .faq a[href*="cloud.google.com"] {
+  background-image:url('data:image/png;base64,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');background-repeat:no-repeat;background-size:20px;padding-left:22px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  .faq a[href*="stackoverflow.com"] {
+  background-image:url('data:image/png;base64,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');background-repeat:no-repeat;background-size:24px;padding-left:22px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  .faq a[href*="support.google.com/webmasters/"] {
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAolBMVEUAAADW1tbW1tZ6enrQ0dJ6enrMzMzq6+zq6+x6enru7+/m5+ju7+/m5+j////S09REi/XW1tbm5+ju7+9PT0/Q0dK8vLxGjfVZWVlNTU16enrMzMzIyMj09PS/0uuSkpJpaWmbm5tim/e0tLSEhIStx+3e3+GsrKxwcHBZk/dPk/R1p/KPtu/U3eqmpqZlZWVfmO5woeqHreWvwN6nu9qLi4vZSE73AAAADnRSTlMAEcxmzO7MzDMz7u6IiHn/rpYAAALMSURBVHja7dXpjtowFIZhUkqZlSV1ncQdEsK+zD7T+7+1xjTiwxVOAmeORyP5+2UspPchEtDy8/Pz8/Pz8/M7cZeduHKdyxbL0FfVAMUraHdUHUB12i22tZWqBRSDgKFfC4CApV8PgIClXw/gE6hyTd/lAR7gAV8fEHwbWtc/ul/WfQ8IfQKAIECfCoCA3sdq+nQB+nQABIQ+CQABtY9Z+lQB+gwACBj6AFAE6DM9AL0fAalPB/yGgNAfntwHAAJKnwCAwNLneQAAVAvM/ttzVLlB4z2/A6AFVoDRf43IfewVgGKNAG/Uvrl39BsCXqh9cy8nA/51tmk63+jDZp6m9wTA4DzANiyW6lOqTxAMHAD22XASReuwpKDvELCNookBGJwx9E8B3OvsQp8e9GmOviNANA/Dh4k+TApBukHfFSBa7/I7whqf3xWA/gOAoU8DDJwBCHk+wIAw9CsAPw/W++CFB/MAD/hCgL59PXPS8toRYKHEndkTauEQIIUQ0hToG2eAXOicKdBXmSPAo9CTpkDo5U4Ad6IEGILy0gFgFJctCACIh/yATABwIChvVyE3IBR7AAQAiOmIGZADAMEBQMkRL+AJAAgOALGUI07AQgBgCPb3uRbwAaYAGAIAZlIL2AA5AIYAgJXUAjaAAsAQADCWO4EjAAQGQAvYAUsDsDQAeuwAMZvu89PZ/jZhBmQCi2dl60+MPiMAf8UgZEUpK/LoJ4oX0C9LIIyF0U8yXkBPVCzRWzIDZjX9sWQG9Kv7ScYN6KnKfizZAf2qfpLzA3p5RV9JboDeytp/kk4Ao5WtP+UFQKCO9sdTSQQ03+OR/kxKdgAWZv/11VI6AWBmP5HSNQD5zwQknwxIqIBu468hBgDqNYCuFXBDASSNAbdWQHB1PiBpDLgOWtZdXPEDri/QswjYAOjbF9x0OQHd26Dl5+fn5+fn5+dn7i/3LEaKJNV/0wAAAABJRU5ErkJggg==');background-repeat:no-repeat;background-size:24px;padding-left:24px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  .faq a[href*="developer.android.com"],.google-codelab-step-0 .instructions.google-codelab-step  .faq a[href*=android-developer] {
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAq1BMVEX///+lyjmfxyGhyCqkyjakyTP+/vuiyS7z+OWlyjKgxyTX57ChyCfa6bTx9uLy9+Sz0l6szk/D24Tt9NrN4ZnK4JSiyCyexh34+/D6/PTp8dPh7cjf7L7k78vc6rnW5qzU5ajS5KPP4p+21GWnzD3F3Yi813Kx0ViqzUWexhr8/vjv9d7Z6LKy0lyZxADh7cLA2n2rzkr1+erJ35C61m6uz1KcxRHn8M6/2XgEePWtAAACr0lEQVRo3u3Z2XKiQBiG4Y9ebNO2aCCyzOC+7zH7/V/ZRJZQZaJpWnKS4TlJUItXbX4pFJXK71DTusvccI6z5oMSAutdhDP2uzpK4CxwxsRBGYJdA19qLAOU4s4LkyUN7G4Ude2glmzuRihHKDqAPZhNuJRKSckms37rvctrKMnG728l5cxKMU7JuCF7KEvf87h1gnu0iXK4B2p9Sc3dUgZNMusMLvu42r20LiBXT8JMWRepN1xlGu+fK8/6xFPxwsvH697/eP/j7uDTOvB+dxwX/AaM2SQ+6icrYHDyGmgfWE3irNeCqTaPAwcArydroboAbuMAb8NQRNJn20SYtHK8HaKZzoffhZl5tlNxsD5PsnUQ2b9jwwnO35WvRo3lN/o2TDwKS5M3gokF0w2wZxgIlpY2FpgsgdQPkLXJQar0A/LVIDB6Idp2GxQQrJI/rbq2Voijlc5S9LZs8uYCqBVyXLTZhLW/fSn3hDMmZAQ05I020gT2PmeM+w4uGpLksFs+oEEtbaqJVnpUkz4uyebf6xQK0CY6XjoSC1xQ9/PPr4KB52zuvTrOa5EssC0auM0C0tYKtI0DqgpUgSpQBapAFfifAj90Tn5YZoGnooH8eutB56KDDosGhlTrYiTyk0epVdFAKJLn9rLHRSNfcE4tF0UDcAXlXPhDfGPtjGejEMUDCEdPY8eFHoOADvPAxiDQLBBQkUHAJfoB34UBS/9CfAETe6lZYKZft/QIFe94vicRy7tcvKOkB0PhYOo4zlNWYNvjpjOdZwU+O24OQlynK62EGCF2J9IbpIsy/P0I3CHW+Qj8qQJVoAr8VOCx3EB+YvDSwIDmXzaW4oZZseU6Lfr5aaAUPT8uyPuT33VeIpRkI5RHyRQfHEKFUj2UJuh1GjaQsxudKECl8jv8A6GtQkKSkMLrAAAAAElFTkSuQmCC');background-repeat:no-repeat;background-size:20px;padding-left:20px
+}
+
+.google-codelab-step-0 .instructions.google-codelab-step  h3>a[href*=github],.google-codelab-step-0 .instructions.google-codelab-step  h3>a[href*=github]:visited {
+  background-image:url('data:image/png;base64,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');background-repeat:no-repeat;background-size:18px;color:#000;padding-left:24px;text-decoration:none
+}
+
+.google-codelab-step-0  code,.google-codelab-step-0  pre {
+  border-radius:4px;font-family:Source Code Pro,Helvetica,Arial;font-size:inherit;overflow-x:auto;
+}
+
+.google-codelab-step-0  code {
+  background-color:#e8eaed;padding:.1em .3em
+}
+
+.google-codelab-step-0  pre {
+  -webkit-text-size-adjust:none;background-color:#28323f;color:#fff;display:block;line-height:1.4;padding:14px
+}
+
+.google-codelab-step-0  pre>code {
+  background-color:transparent;padding:0
+}
+
+.google-codelab-step-0  code em {
+  color:#97c8f2
+}
+
+.google-codelab-step-0  code .str,.google-codelab-step-0  pre .str {
+  color:#34a853
+}
+
+.google-codelab-step-0  code .kwd,.google-codelab-step-0  pre .kwd {
+  color:#f538a0
+}
+
+.google-codelab-step-0  code .com,.google-codelab-step-0  pre .com {
+  color:#bdc1c6;font-style:italic
+}
+
+.google-codelab-step-0  code .typ,.google-codelab-step-0  pre .typ {
+  color:#24c1e0
+}
+
+.google-codelab-step-0  code .lit,.google-codelab-step-0  pre .lit {
+  color:#4285f4
+}
+
+.google-codelab-step-0  code .pln,.google-codelab-step-0  code .pun,.google-codelab-step-0  pre .pln,.google-codelab-step-0  pre .pun {
+  color:#f8f9fa
+}
+
+.google-codelab-step-0  code .tag,.google-codelab-step-0  pre .tag {
+  color:#24c1e0
+}
+
+.google-codelab-step-0  code .atn,.google-codelab-step-0  pre .atn {
+  color:#eda912
+}
+
+.google-codelab-step-0  code .atv,.google-codelab-step-0  pre .atv {
+  color:#34a853
+}
+
+.google-codelab-step-0  code .dec,.google-codelab-step-0  pre .dec {
+  color:#5195ea
+}</style><!-- Shady DOM styles for iron-icon --><style scope="iron-icon-1">.iron-icon-1 {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;fill:currentcolor;height:100%;position:relative;stroke:none;vertical-align:middle;width:100%;
+}</style><style scope="iron-icon-0">.iron-icon-0 {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;fill:currentcolor;height:24px;position:relative;stroke:none;vertical-align:middle;width:24px;
+}</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for neon-animated-pages --><style scope="neon-animated-pages">neon-animated-pages {
+  display:block;position:relative
+}
+
+neon-animated-pages >* {
+  bottom:0;left:0;position:absolute;right:0;top:0
+}
+
+neon-animated-pages >:not(.iron-selected):not(.neon-animating) {
+  display:none!important
+}
+
+neon-animated-pages >.neon-animating {
+  pointer-events:none
+}</style><!-- Shady DOM styles for slide-from-right-animation --><!-- Shady DOM styles for slide-from-left-animation --><!-- Shady DOM styles for slide-right-animation --><!-- Shady DOM styles for slide-left-animation --><!-- Shady DOM styles for app-header-layout --><style scope="app-header-layout-0">.app-header-layout-0 {
+  display:block;position:relative;z-index:0
+}
+
+.app-header-layout-0 >app-header {
+  left:0;position:fixed;right:0;top:0;z-index:1
+}
+
+.app-header-layout-0[has-scrolling-region] {
+  height:100%
+}
+
+.app-header-layout-0[has-scrolling-region] >app-header {
+  position:absolute
+}
+
+.app-header-layout-0[has-scrolling-region]>#contentContainer.app-header-layout {
+  bottom:0;left:0;position:absolute;right:0;top:0;-webkit-overflow-scrolling:touch;overflow-y:auto
+}
+
+.app-header-layout-0[fullbleed] {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;bottom:0;left:0;position:absolute;right:0;top:0
+}
+
+.app-header-layout-0[fullbleed]>#contentContainer.app-header-layout {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;-ms-flex:1 1 0.000000001px;-ms-flex-preferred-size:0.000000001px;-webkit-flex:1;-webkit-flex-basis:0.000000001px;flex:1;flex-basis:0.000000001px
+}
+
+.app-header-layout-0 #contentContainer.app-header-layout {
+  position:relative;z-index:0
+}</style><!-- Shady DOM styles for app-drawer --><style scope="app-drawer-0">.app-drawer-0 {
+  bottom:-120px;left:0;position:fixed;right:0;top:-120px;transition-property:visibility;visibility:hidden
+}
+
+.app-drawer-0[opened] {
+  visibility:visible
+}
+
+.app-drawer-0[persistent] {
+  width:256px
+}
+
+.app-drawer-0[persistent][position=left] {
+  right:auto
+}
+
+.app-drawer-0[persistent][position=right] {
+  left:auto
+}
+
+.app-drawer-0 #contentContainer.app-drawer {
+  -webkit-transform:translate3d(-100%,0,0);background-color:#fff;bottom:0;left:0;padding:120px 0;position:absolute;top:0;transform:translate3d(-100%,0,0);transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;width:256px;background:#fff
+}
+
+.app-drawer-0[position=right]>#contentContainer.app-drawer {
+  -webkit-transform:translate3d(100%,0,0);left:auto;right:0;transform:translate3d(100%,0,0)
+}
+
+.app-drawer-0[swipe-open]>#contentContainer.app-drawer:after {
+  bottom:0;content:"";left:100%;position:fixed;top:0;visibility:visible;width:20px
+}
+
+.app-drawer-0[swipe-open][position=right]>#contentContainer.app-drawer:after {
+  left:auto;right:100%
+}
+
+.app-drawer-0 #scrim.app-drawer,.app-drawer-0[opened]>#contentContainer.app-drawer {
+  -webkit-transform:translateZ(0);transform:translateZ(0)
+}
+
+.app-drawer-0 #scrim.app-drawer {
+  background:rgba(0,0,0,.5);bottom:0;left:0;opacity:0;position:absolute;right:0;top:0;transition-property:opacity
+}
+
+.app-drawer-0[opened]>#scrim.app-drawer {
+  opacity:1
+}
+
+.app-drawer-0[opened][persistent]>#scrim.app-drawer {
+  opacity:0;visibility:hidden
+}</style><!-- Shady DOM styles for iron-media-query --><!-- Shady DOM styles for app-drawer-layout --><style scope="app-drawer-layout-0">.app-drawer-layout-0 {
+  display:block
+}
+
+.app-drawer-layout-0[fullbleed] {
+  bottom:0;left:0;position:absolute;right:0;top:0
+}
+
+.app-drawer-layout-0 #contentContainer.app-drawer-layout {
+  height:100%;position:relative;transition:none
+}
+
+.app-drawer-layout-0 #contentContainer.app-drawer-layout:not(.narrow)  [drawer-toggle] {
+  display:none
+}</style><!-- Shady DOM styles for paper-button --><style scope="paper-button-0">.paper-button-0 {
+  display:block;position:relative
+}
+
+.paper-button-0[elevation="1"] {
+  box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2)
+}
+
+.paper-button-0[elevation="2"] {
+  box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.4)
+}
+
+.paper-button-0[elevation="3"] {
+  box-shadow:0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.4)
+}
+
+.paper-button-0[elevation="4"] {
+  box-shadow:0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.4)
+}
+
+.paper-button-0[elevation="5"] {
+  box-shadow:0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.4)
+}
+
+.paper-button-0 {
+  display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;background:transparent;border-radius:3px;box-sizing:border-box;cursor:pointer;font:inherit;margin:0 .29em;min-width:5.14em;outline-width:0;padding:.7em .57em;position:relative;text-transform:uppercase;user-select:none;z-index:0;-webkit-font-smoothing:antialiased;font-family:Roboto,Noto,sans-serif;
+}
+
+.paper-button-0[hidden] {
+  display:none!important
+}
+
+.paper-button-0[raised].keyboard-focus {
+  font-weight:700;
+}
+
+.paper-button-0:not([raised]).keyboard-focus {
+  font-weight:700;
+}
+
+.paper-button-0[disabled] {
+  background:#eaeaea;color:#a8a8a8;cursor:auto;pointer-events:none;
+}
+
+.paper-button-0[animated] {
+  transition:box-shadow .28s cubic-bezier(.4,0,.2,1)
+}
+
+.paper-button-0 paper-ripple.paper-button {
+  color:
+}</style><!-- Shady DOM styles for iron-overlay-backdrop --><style scope="iron-overlay-backdrop-0">.iron-overlay-backdrop-0 {
+  background-color:#000;height:100%;left:0;opacity:0;pointer-events:none;position:fixed;top:0;transition:opacity .2s;width:100%;
+}
+
+.iron-overlay-backdrop-0.opened {
+  opacity:.6;pointer-events:auto;
+}</style><!-- Shady DOM styles for paper-dialog --><style scope="paper-dialog-0">.paper-dialog-0 {
+  background:#fff;color:#212121;display:block;margin:24px 40px;-webkit-font-smoothing:antialiased;font-family:Roboto,Noto,sans-serif;font-size:14px;font-weight:400;line-height:20px;box-shadow:0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.4);
+}
+
+.paper-dialog-0 >* {
+  margin-top:20px;padding:0 24px
+}
+
+.paper-dialog-0 >.no-padding {
+  padding:0
+}
+
+.paper-dialog-0 >:first-child {
+  margin-top:24px
+}
+
+.paper-dialog-0 >:last-child {
+  margin-bottom:24px
+}
+
+.paper-dialog-0  h2 {
+  margin:0;position:relative;-webkit-font-smoothing:antialiased;font-family:Roboto,Noto,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:20px;font-weight:500;line-height:28px;
+}
+
+.paper-dialog-0  .buttons {
+  color:#3f51b5;margin:0;padding:8px 8px 8px 24px;position:relative;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end
+}</style><!-- Shady DOM styles for paper-fab --><!-- Shady DOM styles for paper-icon-button --><style scope="paper-icon-button-0">.paper-icon-button-0 {
+  -moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;box-sizing:border-box!important;cursor:pointer;display:inline-block;height:40px;line-height:1;outline:none;padding:8px;position:relative;user-select:none;width:40px;z-index:0;
+}
+
+.paper-icon-button-0 #ink.paper-icon-button {
+  color:#212121;opacity:.6
+}
+
+.paper-icon-button-0[disabled] {
+  color:#9b9b9b;cursor:auto;pointer-events:none;
+}</style><!-- Shady DOM styles for paper-menu --><style scope="paper-menu-0">.paper-menu-0 .selectable-content.paper-menu >.iron-selected {
+  font-weight:700;
+}
+
+.paper-menu-0 .selectable-content.paper-menu >[disabled] {
+  color:#9b9b9b
+}
+
+.paper-menu-0 .selectable-content.paper-menu >:focus {
+  outline:0;position:relative;
+}
+
+.paper-menu-0 .selectable-content.paper-menu >:focus:after {
+  bottom:0;left:0;position:absolute;right:0;top:0;background:currentColor;content:"";opacity:0.12;pointer-events:none;
+}
+
+.paper-menu-0 .selectable-content.paper-menu >[colored]:focus:after {
+  opacity:.26
+}
+
+.paper-menu-0 {
+  background:#fff;color:#212121;display:block;padding:8px 0;background:inherit;cursor:pointer;padding:0
+}</style><!-- Shady DOM styles for paper-item --><style scope="paper-item-0">.paper-item-0 .paper-item.paper-item,.paper-item-0 {
+  display:block;min-height:48px;padding:0 16px;position:relative
+}
+
+.paper-item-0 .paper-item.paper-item {
+  -webkit-font-smoothing:antialiased;font-family:Roboto,Noto,sans-serif;font-size:16px;font-weight:400;line-height:24px;background:#fff;border:none;outline:none;text-align:left;width:100%
+}
+
+.paper-item-0 .paper-item[hidden].paper-item,.paper-item-0[hidden] {
+  display:none!important
+}
+
+.paper-item-0 .paper-item.iron-selected.paper-item,.paper-item-0.iron-selected {
+  font-weight:bold;
+}
+
+.paper-item-0 .paper-item[disabled].paper-item,.paper-item-0[disabled] {
+  color:#9b9b9b;
+}
+
+.paper-item-0 .paper-item.paper-item:focus,.paper-item-0:focus {
+  outline:0;position:relative;
+}
+
+.paper-item-0 .paper-item.paper-item:focus:before,.paper-item-0:focus:before {
+  bottom:0;left:0;position:absolute;right:0;top:0;background:currentColor;content:"";opacity:0.12;pointer-events:none;
+}
+
+.paper-item-0 {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;-ms-flex-align:center;-webkit-align-items:center;align-items:center;-webkit-font-smoothing:antialiased;font-family:Roboto,Noto,sans-serif;font-size:16px;font-weight:400;line-height:24px;
+}</style><!-- Shady DOM styles for google-codelab --><style scope="google-codelab-0">.google-codelab-0 .layout.google-codelab {
+  display:-ms-flexbox;display:-webkit-flex;display:flex
+}
+
+.google-codelab-0 .layout.horizontal.google-codelab {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row
+}
+
+.google-codelab-0 .layout.vertical.google-codelab {
+  display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column
+}
+
+.google-codelab-0 .layout.center.google-codelab {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center
+}
+
+.google-codelab-0 .layout.center-center.google-codelab {
+  -ms-flex-align:center;-webkit-align-items:center;align-items:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center
+}
+
+.google-codelab-0 .flex.google-codelab {
+  -ms-flex:1 1 0.000000001px;-ms-flex-preferred-size:0.000000001px;-webkit-flex:1;-webkit-flex-basis:0.000000001px;flex:1;flex-basis:0.000000001px
+}
+
+.google-codelab-0 .two.google-codelab {
+  -ms-flex:2;-webkit-flex:2;flex:2
+}
+
+.google-codelab-0 .end-justified.google-codelab {
+  -ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end
+}
+
+.google-codelab-0 .end.google-codelab {
+  -ms-flex-align:end;-webkit-align-items:flex-end;align-items:flex-end
+}
+
+.google-codelab-0 .justified.google-codelab {
+  -ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between
+}
+
+.google-codelab-0 .self-center.google-codelab {
+  -ms-align-self:center;-ms-flex-item-align:center;-webkit-align-self:center;align-self:center
+}
+
+.google-codelab-0 .wrap.google-codelab {
+  -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap
+}
+
+.google-codelab-0 {
+  ;display:block;line-height:24px;
+}
+
+.google-codelab-0[theme=minimal] {
+  position:relative
+}
+
+.google-codelab-0 #headerpanel.google-codelab {
+  left:0;margin-left:256px;position:fixed;right:0;z-index:1
+}
+
+.google-codelab-0 #headerpanel[narrow].google-codelab {
+  margin-left:0
+}
+
+.google-codelab-0 app-drawer-layout.google-codelab {
+  overflow-x:hidden
+}
+
+.google-codelab-0 .drawer-content-wrapper.google-codelab {
+  border-right:1px solid #dadce0;padding:16px
+}
+
+.google-codelab-0 #main-content.google-codelab {
+  background:#64b5f6
+}
+
+.google-codelab-0 #pages.google-codelab {
+  top:64px
+}
+
+.google-codelab-0 #controls[narrow].google-codelab {
+  width:100%
+}
+
+.google-codelab-0 #main-toolbar.google-codelab {
+  -ms-flex-align:center;-ms-flex-pack:justify;-webkit-align-items:center;-webkit-justify-content:space-between;align-items:center;background:#fff;box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);color:#3c4043;display:-webkit-flex;display:-ms-flexbox;display:flex;height:64px;justify-content:space-between;padding:0 16px
+}
+
+.google-codelab-0 #main-toolbar.google-codelab .title.google-codelab {
+  -ms-flex:1;-webkit-flex:1;flex:1;font-family:Google Sans,Arial,sans-serif;font-weight:400;margin:0 8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap
+}
+
+.google-codelab-0 paper-icon-button[icon=menu].google-codelab {
+  margin-right:0!important
+}
+
+.google-codelab-0 paper-fab.google-codelab {
+  ;-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0
+}
+
+.google-codelab-0[theme=minimal] #resumeDialog.google-codelab>*.google-codelab {
+  margin-top:20px;padding:0 24px
+}
+
+.google-codelab-0[theme=minimal] #resumeDialog.google-codelab .buttons.google-codelab {
+  margin:0;padding:8px 8px 8px 24px
+}
+
+.google-codelab-0 .countdown.google-codelab iron-icon.google-codelab {
+  margin-right:3px
+}
+
+.google-codelab-0:not([theme=minimal]) #drawer.google-codelab .countdown.google-codelab {
+  display:none
+}
+
+.google-codelab-0[theme=minimal] #drawer.google-codelab .countdown.google-codelab {
+  -ms-flex-negative:0;-webkit-flex-shrink:0;color:#2196f3;flex-shrink:0;font-style:italic;padding:0 16px 16px
+}
+
+.google-codelab-0 #controls.google-codelab {
+  bottom:16px;box-sizing:border-box;padding:0 16px;pointer-events:none;position:fixed;right:0;width:calc(100% - 256px)
+}
+
+.google-codelab-0 #controls.google-codelab .fabs.google-codelab {
+  margin:0 auto;max-width:1050px
+}
+
+.google-codelab-0 .navbutton.google-codelab {
+  border-radius:4px;font-family:Google Sans,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:.6px;padding:6px 24px;pointer-events:auto;text-transform:none
+}
+
+.google-codelab-0 .navbutton.nextbutton.google-codelab {
+  background:#1a73e8;color:#fff
+}
+
+.google-codelab-0 .navbutton.prevbutton.google-codelab {
+  background:#fff;color:#1a73e8;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out
+}
+
+.google-codelab-0 .navbutton.prevbutton[disabled].google-codelab {
+  -webkit-transform:scale(0);color:#fff;transform:scale(0)
+}
+
+.google-codelab-0 .navbutton.donebutton.google-codelab {
+  background:#1e8e3e;color:#fff
+}
+
+.google-codelab-0 #toc.google-codelab {
+  margin-bottom:1.5em
+}
+
+.google-codelab-0 .toc-item.google-codelab {
+  border-radius:4px;box-sizing:content-box;color:#80868b;font-size:14px;font-weight:400;line-height:20px;overflow:hidden;padding:6px 16px
+}
+
+.google-codelab-0 .toc-item.google-codelab i.google-codelab {
+  background:#80868b;border-radius:50%;color:#fff;display:inline-block;font-style:normal;height:26px;line-height:26px;margin-right:8px;min-width:26px;text-align:center;vertical-align:middle;width:26px
+}
+
+.google-codelab-0 .toc-item.google-codelab i.google-codelab:after,.google-codelab-0 .toc-item.google-codelab i.google-codelab:before {
+  border-left:1px solid #80868b;border-right:1px solid #80868b;content:"";display:block;height:44px;margin-top:1px;width:0;z-index:1
+}
+
+.google-codelab-0 .toc-item.google-codelab i.google-codelab:before {
+  margin-left:11px;margin-top:-44px
+}
+
+.google-codelab-0 .toc-item.google-codelab i.google-codelab:after {
+  margin-left:11px
+}
+
+.google-codelab-0 .toc-item.completed.google-codelab {
+  color:#212124
+}
+
+.google-codelab-0 .toc-item.completed.google-codelab i.google-codelab,.google-codelab-0 .toc-item.iron-selected.google-codelab i.google-codelab {
+  background-color:#1a73e8
+}
+
+.google-codelab-0 .toc-item.iron-selected.google-codelab {
+  background-color:#dadce0;color:#212124;font-weight:600
+}
+
+.google-codelab-0 .toc-item.completed.google-codelab i.google-codelab,.google-codelab-0 .toc-item.completed.google-codelab i.google-codelab:after,.google-codelab-0 .toc-item.completed.google-codelab i.google-codelab:before,.google-codelab-0 .toc-item.iron-selected.google-codelab i.google-codelab,.google-codelab-0 .toc-item.iron-selected.google-codelab i.google-codelab:before {
+  border-color:#1a73e8
+}
+
+.google-codelab-0 .toc-item.google-codelab:first-of-type i.google-codelab:before,.google-codelab-0 .toc-item.google-codelab:last-of-type i.google-codelab:after {
+  display:none
+}
+
+.google-codelab-0 #metadata.google-codelab {
+  -ms-flex:0 0 80px;-webkit-flex:0 0 80px;color:#777;flex:0 0 80px;font-size:.7em
+}
+
+.google-codelab-0 #feedback.google-codelab a.google-codelab {
+  color:currentcolor
+}
+
+@media (min-width:641px) {
+.google-codelab-0:not([theme=minimal]) #pages.google-codelab {
+  margin-top:32px
+}
+
+.google-codelab-0 #controls.google-codelab {
+  bottom:32px;padding:0 32px
+}
+
+}</style><!-- Shady DOM styles for iron-jsonp-library --><!-- Shady DOM styles for google-youtube-api --><!-- Shady DOM styles for google-youtube --><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Developing Progressive Web Apps 09.0: Responsive design</title>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="../../elements/codelab.html">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <style>
+    body {
+      font-family: "Roboto",sans-serif;
+    }
+  </style>
+  
+<style type="text/css">/*
+<div id="__sound-pirate" class="__sound-pirate-at-left">
+    <a class="__sound-pirate-to-left"><img src="chrome-extension://naaoeihcbaeganoldlfjnomncgdcdnjf/img/arrowl32.png"></a>
+    <a class="__sound-pirate-download" download href=""><img src="chrome-extension://naaoeihcbaeganoldlfjnomncgdcdnjf/img/music32.png"></a>
+    <a class="__sound-pirate-to-right"><img src="chrome-extension://naaoeihcbaeganoldlfjnomncgdcdnjf/img/arrowr32.png"></a>
+</div>
+*/
+#__sound-pirate {
+  margin: 0 4px 4px 4px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 32px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483647;
+  cursor: pointer;
+  transition: left 1s ease; }
+  #__sound-pirate .__sound-pirate-to-left, #__sound-pirate .__sound-pirate-to-right {
+    display: none;
+    position: absolute;
+    width: 14px;
+    top: 0; }
+  #__sound-pirate .__sound-pirate-to-left {
+    right: 100%; }
+  #__sound-pirate .__sound-pirate-to-right {
+    left: 100%; }
+  #__sound-pirate.__sound-pirate-at-left:hover .__sound-pirate-to-right {
+    display: block; }
+  #__sound-pirate.__sound-pirate-at-right:hover .__sound-pirate-to-left {
+    display: block; }
+  #__sound-pirate.__sound-pirate-at-right {
+    left: calc(100% - 32px - 4px); }
+  #__sound-pirate * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  #__sound-pirate img {
+    display: block; }
+  #__sound-pirate .__sound-pirate-download {
+    display: block;
+    transform: rotate(0turn);
+    transition: transform 1s ease; }
+</style></head>
+<body class="fullbleed">
+
+  <google-codelab title="Developing Progressive Web Apps 09.0: Responsive design" environment="web" feedback-link="" class="x-scope google-codelab-0"><iron-localstorage hidden="" class="style-scope google-codelab"></iron-localstorage><app-drawer-layout fullbleed="" class="style-scope google-codelab x-scope app-drawer-layout-0">
+
+<div id="contentContainer" class="style-scope app-drawer-layout" style="margin-left: 256px;">
+<app-header-layout fullbleed="" class="style-scope google-codelab x-scope app-header-layout-0">
+
+
+<div id="contentContainer" class="style-scope app-header-layout">
+<div id="headerpanel" fixed="" class="style-scope google-codelab"><div id="main-toolbar" class="style-scope google-codelab"><div class="style-scope google-codelab"><template is="dom-if" strip-whitespace="" class="style-scope google-codelab"></template><paper-icon-button icon="arrow-back" class="style-scope google-codelab x-scope paper-icon-button-0" role="button" tabindex="0" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" class="style-scope iron-icon"></path></g></svg>
+
+</iron-icon></paper-icon-button><template is="dom-if" strip-whitespace="" class="style-scope google-codelab"></template></div><h3 class="title style-scope google-codelab">Developing Progressive Web Apps 09.0: Responsive design</h3><div title="Time remaining" class="countdown layout horizontal style-scope google-codelab" hidden=""><iron-icon icon="schedule" class="style-scope google-codelab x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" class="style-scope iron-icon"></path></g></svg>
+
+</iron-icon><span class="style-scope google-codelab">0 min remaining</span></div></div></div><div id="main-content" class="style-scope google-codelab"><neon-animated-pages id="pages" class="style-scope google-codelab">
+
+<google-codelab-step label="Welcome" duration="0" class="x-scope google-codelab-step-0 iron-selected" style="transform-origin: 0px 50%;"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">1</span>. <span class="style-scope google-codelab-step">Welcome</span></h2>
+        <p><em>This codelab is part of the </em><a href="https://codelabs.developers.google.com/dev-pwa-training/" target="_blank"><em>Developing Progressive </em><em>Web Apps training course</em></a><em>, developed by the Google Developers Training team. You will get the most value out of this course if you work through the codelabs in sequence.</em></p>
+<p><em>For complete details about the course, see the </em><a href="https://developers.google.com/training/courses/progressive-web-apps" target="_blank"><em>Developing Progressive Web Apps overview</em></a><em>. </em></p>
+<aside class="special"><p><strong>Note:</strong> This course uses the terms "codelab" and "lab" interchangeably.</p>
+</aside>
+
+<h2>Introduction</h2>
+<p>This lab shows you how to style your website content to make it responsive. </p>
+<h2 class="checklist">What you'll learn</h2>
+<ul class="checklist">
+<li>How to style your app so that it works well in multiple form factors</li>
+<li>How to use Flexbox to easily organize your content into columns</li>
+<li>How to use media queries to reorganize your content based on screen size</li>
+</ul>
+<h2>What you should know</h2>
+<ul>
+<li>Basic HTML and CSS</li>
+</ul>
+<h2>What you will need</h2>
+<ul>
+<li>Computer with terminal/shell access</li>
+<li>Connection to the internet</li>
+<li>Text editor</li>
+</ul>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Get set up" duration="0" class="x-scope google-codelab-step-0" style="transform-origin: 0px 50%;"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">2</span>. <span class="style-scope google-codelab-step">Get set up</span></h2>
+        <p>Download or clone the <a href="https://github.com/google-developer-training/pwa-training-labs" target="_blank">pwa-training-labs repository</a> from github and install the <a href="https://nodejs.org/en/" target="_blank">LTS version of Node.js</a>, if needed.</p>
+<p>If you don't have a preferred local development server, install the Node.js <code>http-server</code> package:</p>
+<pre>npm install http-server -g</pre>
+<p>Navigate into the <code>responsive-design-lab/app/</code> directory and start the server:</p>
+<pre>cd responsive-design-lab/app
+http-server -p 8080 -a localhost -c 0</pre>
+<p>You can terminate the server at any time with <code>Ctrl-c</code>.</p>
+<p>Open your browser and navigate to <code>localhost:8080/</code>.</p>
+<p><strong>Note:</strong> Unregister any service workers and clear all service worker caches for localhost so that they do not interfere with the lab. In Chrome DevTools, you can achieve this by clicking <strong>Clear site data</strong> from the <strong>Clear storage</strong> section of the <strong>Application</strong> tab.</p>
+<p>If you have a text editor that lets you open a project, open the <code>responsive-design-lab/app/</code> folder. This will make it easier to stay organized. Otherwise, open the folder in your computer's file system. The <code>app/</code> folder is where you will be building the lab. </p>
+<p>This folder contains:</p>
+<ul>
+<li><code>index.html</code> is the main HTML page for our sample site/application</li>
+<li><code>modernizr-custom.js</code> is a feature detection tool that simplifies testing for Flexbox support</li>
+<li><code>styles/main.css</code> is the cascading style sheet for the sample site</li>
+</ul>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Test the page" duration="0" class="x-scope google-codelab-step-0" style="transform-origin: 0px 50%;"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">3</span>. <span class="style-scope google-codelab-step">Test the page</span></h2>
+        <p>Return to the app in the browser. Try shrinking the window width to below 500px and notice that the content doesn't respond well.</p>
+<p>Open developer tools and enable <strong>device mode</strong> in your browser. This mode simulates the behavior of your app on a mobile device. Notice that the page is zoomed out to fit the fixed-width content on the screen. This is not a good experience because the content will likely be too small for most users, forcing them to zoom and pan. </p>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Set the visual viewport" duration="0" class="x-scope google-codelab-step-0" style="transform-origin: 0px 50%;"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">4</span>. <span class="style-scope google-codelab-step">Set the visual viewport</span></h2>
+        <p>Replace TODO 3 in <code>index.html</code> with the following tag: </p>
+<pre><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1"</span><span class="tag">&gt;</span></code></pre>
+<p>Save the file. Refresh the page in the browser and check the page in device mode. Notice the page is no longer zoomed out and the scale of the content matches the scale on a desktop device. If the content behaves unexpectedly in the device emulator, toggle in and out of device mode to reset it.</p>
+<p><strong>Note:</strong> Device emulation gives you a close approximation as to how your site will look on a mobile device, but to get the full picture you should always test your site on real devices. You can learn more about debugging Android devices on <a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/" target="_blank">Chrome</a> and <a href="https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging" target="_blank">Firefox</a>.</p>
+<h3>Explanation</h3>
+<p>A meta viewport tag gives the browser instructions on how to control the page's dimensions and scaling. The <code>width</code> property controls the size of the viewport. It can be set to a specific number of pixels (for example, <code>width=500</code>) or to the special value <code>device-width,</code> which is the width of the screen in CSS pixels at a scale of 100%. (There are corresponding <code>height</code> and <code>device-height</code> values, which can be useful for pages with elements that change size or position based on the viewport height.)</p>
+<p>The initial-scale property controls the zoom level when the page is first loaded. Setting initial scale improves the experience, but the content still overflows past the edge of the screen. We'll fix this in the next step.</p>
+<h3>For more information</h3>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/#set-the-viewport" target="_blank">Set the viewport</a> - Responsive Web Design Basics </li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag" target="_blank">Using the viewport meta tag to control layout on mobile browsers</a> - MDN</li>
+</ul>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Use media queries" duration="0" class="x-scope google-codelab-step-0" style="transform-origin: 0px 50%;"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">5</span>. <span class="style-scope google-codelab-step">Use media queries</span></h2>
+        <p>Replace TODO 4 in <code>styles/main.css</code> with the following code:</p>
+<pre><code><span class="lit">@media</span><span class="pln"> screen </span><span class="kwd">and</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">48rem</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">container </span><span class="pun">.</span><span class="pln">col </span><span class="pun">{</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">95</span><span class="pun">%;</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Save the file. Disable device mode in the browser and refresh the page. Try shrinking the window width. Notice that the content switches to a single column layout at the specified width. Re-enable device mode and observe that the content responds to fit the device width.</p>
+<h3>Explanation</h3>
+<p>To make sure that the text is readable we use a media query when the browser's width becomes 48rem (768 pixels at browser's default font size or 48 times the default font size in the user's browser). See <a href="https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984" target="_blank">When to use Em vs Rem</a> for a good explanation of why rem is a good choice for relative units. When the media query is triggered we change the layout from three columns to one column by changing the <code>width</code> of each of the three <code>div</code>s to fill the page. </p>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Using Flexbox" duration="0" class="x-scope google-codelab-step-0"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">6</span>. <span class="style-scope google-codelab-step">Using Flexbox</span></h2>
+        <p>The <a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">Flexible Box Layout Module</a> (Flexbox) is a useful and easy-to-use tool for making your content responsive. <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a> lets us accomplish the same result as in the previous steps, but it takes care of any spacing calculations for us and provides a bunch of ready-to-use CSS properties for structuring content. </p>
+<h2>Comment out existing rules in CSS</h2>
+<p>Comment out all of the rules in <code>styles/main.css</code> by wrapping them in <code>/*</code> and <code>*/</code>. We will make these our fallback rules for when Flexbox is not supported in the Flexbox as progressive enhancement section.</p>
+<h2>Add Flexbox layout</h2>
+<p>Replace TODO 5.2 in <code>styles/main.css</code> with the following code:</p>
+<pre><code>.container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  background: #eee;  
+  overflow: auto;
+}
+
+.container .col {
+  flex: 1;
+  padding: 1rem;
+}</code></pre>
+<p>Save the code and refresh <code>index.html</code> in your browser. Disable device mode in the browser and refresh the page. If you make your browser window narrower, the columns grow thinner until only one of them remains visible. We'll fix this with media queries in the next exercise.</p>
+<h3>Explanation</h3>
+<p>The first rule defines the <code>container</code> <code>div</code> as the flex container. This enables a flex context for all its direct children. We are mixing old and new syntax for including Flexbox to get broader support (see <strong>For more information</strong> for details).</p>
+<p>The second rule uses the <code>.col</code> class to create our equal width flex children. Setting the first argument of the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-13" target="_blank"><code>flex</code></a> property to <code>1</code> for all <code>div</code>s with class <code>col</code> divides the remaining space evenly between them. This is more convenient than calculating and setting the relative width ourselves.</p>
+<h3>For more information</h3>
+<ul>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a> - CSS Tricks</li>
+<li><a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">CSS Flexible Box Layout Module Level 1</a> - W3C</li>
+<li><a href="http://shouldiprefix.com/#flexbox" target="_blank">What CSS to prefix?</a></li>
+<li><a href="https://css-tricks.com/using-flexbox/" target="_blank">Using Flexbox</a> - CSS Tricks</li>
+</ul>
+<h2>Optional: Set different relative widths</h2>
+<p>Use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child" target="_blank">nth-child pseudo-class</a> to set the relative widths of the first two columns to 1 and the third to 1.5. You must use the <code>flex</code> property to set the relative widths for each column. For example, the selector for the first column would look like this:</p>
+<pre><code>.container .col:nth-child(1)</code></pre>
+<h2>Use media queries with Flexbox</h2>
+<p>Replace TODO 5.4 in <code>styles/main.css</code> with the code below:</p>
+<pre><code>@media screen and (max-width: 48rem) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+  }
+}</code></pre>
+<p>Save the code and refresh <code>index.html</code> in your browser. Now if you shrink the browser width, the content reorganizes into one column.</p>
+<h3>Explanation</h3>
+<p>When the media query is triggered we change the layout from three-column to one-column by setting the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5" target="_blank"><code>flex-flow</code></a> property to <code>column</code>. This accomplishes the same result as the media query we added in step 5. <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a> provides lots of other properties like <code>flex-flow</code> that let you easily structure, re-order, and justify your content so that it responds well in any context.</p>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Using Flexbox as a progressive enhancement" duration="0" class="x-scope google-codelab-step-0"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">7</span>. <span class="style-scope google-codelab-step">Using Flexbox as a progressive enhancement</span></h2>
+        <p>As Flexbox is a relatively new technology, we should include fallbacks in our CSS.</p>
+<h2>Add Modernizr</h2>
+<p><a href="https://modernizr.com/docs" target="_blank">Modernizr</a> is a feature detection tool that simplifies testing for Flexbox support.</p>
+<p>Replace TODO 6.1 in <code>index.html</code> with the code to include the custom Modernizr build:</p>
+<pre><code>&lt;script src="modernizr-custom.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Explanation</h3>
+<p>We include a <a href="https://modernizr.com/download" target="_blank">Modernizr build</a> at the top of <code>index.html</code>, which tests for Flexbox support. This runs the test on page-load and appends the class <code>flexbox</code> to the <code>&lt;html&gt;</code> element if the browser supports Flexbox. Otherwise, it appends a <code>no-flexbox</code> class to the <code>&lt;html&gt;</code> element. In the next section we add these classes to the CSS.</p>
+<p><strong>Note:</strong> If we were using the <code>flex-wrap</code> property of Flexbox, we would need to add a separate Modernizr detector just for this feature. Older versions of some browsers partially support Flexbox, and do not include this feature.</p>
+<h2>Use Flexbox progressively</h2>
+<p>Let's use the <code>flexbox</code> and <code>no-flexbox</code> classes in the CSS to provide fallback rules when Flexbox is not supported.</p>
+<p>Now in <code>styles/main.css</code>, add <code>.no-flexbox</code> in front of each rule that we commented out:</p>
+<pre><code>.no-flexbox .container {
+  background: #eee;
+  overflow: auto;
+}
+
+.no-flexbox .container .col {
+    width: 27%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+
+@media screen and (max-width: 48rem) {
+  .no-flexbox .container .col {
+    width: 95%;
+  }
+}</code></pre>
+<p>In the same file, add <code>.flexbox</code> in front of the rest of the rules:</p>
+<pre><code>.flexbox .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee;
+  overflow: auto;
+}
+
+.flexbox .container .col {
+  flex: 1;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 48rem) {
+    .flexbox .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: column;
+    }
+}</code></pre>
+<p>Remember to add <code>.flexbox</code> to the rules for the individual columns if you completed the optional step 5.3.</p>
+<p>Save the code and refresh <code>index.html</code> in the browser. The page should look the same as before, but now it works well in any browser on any device. If you have a <a href="http://caniuse.com/#search=flexbox" target="_blank">browser that doesn't support Flexbox</a>, you can test the fallback rules by opening <code>index.html</code> in that browser.</p>
+<h3>For more information</h3>
+<ul>
+<li><a href="https://www.sitepoint.com/migrating-flexbox-cutting-mustard/" target="_blank">Migrating to Flexbox</a> - Cutting the Mustard</li>
+<li><a href="https://modernizr.com/docs" target="_blank">Modernizr Documentation</a></li>
+</ul>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Congratulations!" duration="0" class="x-scope google-codelab-step-0"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">8</span>. <span class="style-scope google-codelab-step">Congratulations!</span></h2>
+        <p>You have learned to style your content to make it responsive. Using media queries, you can change the layout of your content based on the window or screen size of the user's device.</p>
+<h2 class="checklist">What we've covered</h2>
+<ul class="checklist">
+<li>Setting the visual viewport</li>
+<li>Flexbox</li>
+<li>Media queries</li>
+</ul>
+<h2>Resources</h2>
+<h3>Learn more about the basics of responsive design</h3>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/#set-the-viewport" target="_blank">Responsive Web Design Basics - Set the viewport</a> </li>
+<li><a href="http://www.quirksmode.org/mobile/viewports2.html" target="_blank">A tale of two viewports</a></li>
+</ul>
+<h3>Learn more about Flexbox as a progressive enhancement</h3>
+<ul>
+<li><a href="http://blog.formkeep.com/progressive-enhancement-start-using-css-without-breaking-older-browsers/" target="_blank">Progressive Enhancement: Start Using CSS Without Breaking Older Browsers</a></li>
+<li><a href="https://www.sitepoint.com/migrating-flexbox-cutting-mustard/" target="_blank">Migrating to Flexbox by Cutting the Mustard</a></li>
+<li><a href="https://modernizr.com/" target="_blank">Modernizr</a></li>
+</ul>
+<h3>Learn about libraries for responsive CSS</h3>
+<ul>
+<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+<li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+<li><a href="http://lesscss.org/" target="_blank">Less</a></li>
+<li><a href="https://material.google.com/" target="_blank">Material Design</a></li>
+</ul>
+<h3>Learn more about using media queries</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">Using Media Queries</a> </li>
+</ul>
+
+
+      </div></div></google-codelab-step><google-codelab-step label="Next codelab" duration="0" class="x-scope google-codelab-step-0"><div class="instructions style-scope google-codelab-step"><div class="inner style-scope google-codelab-step"><h2 id="title" class="style-scope google-codelab-step"><span class="style-scope google-codelab-step">9</span>. <span class="style-scope google-codelab-step">Next codelab</span></h2>
+        <p>To see all the codelabs in the PWA training course, visit the <a href="https://codelabs.developers.google.com/dev-pwa-training/" target="_blank">PWA training course codelabs landing page</a>.</p>
+
+
+
+      </div></div></google-codelab-step>
+</neon-animated-pages><footer id="controls" class="style-scope google-codelab"><div class="fabs layout horizontal justified style-scope google-codelab"><paper-button raised="" class="navbutton prevbutton style-scope google-codelab x-scope paper-button-0" title="Previous step" role="button" tabindex="-1" animated="" aria-disabled="true" elevation="0" style="pointer-events: none;" disabled="">Back<paper-ripple class="style-scope paper-button">
+
+<div id="background" class="style-scope paper-ripple" style="opacity: 0;"></div>
+<div id="waves" class="style-scope paper-ripple"></div>
+</paper-ripple></paper-button><div class="style-scope google-codelab"><paper-button raised="" class="navbutton nextbutton style-scope google-codelab x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Start codelab">Next<paper-ripple class="style-scope paper-button">
+
+<div id="background" class="style-scope paper-ripple" style="opacity: 0.00736;"></div>
+<div id="waves" class="style-scope paper-ripple"></div>
+</paper-ripple></paper-button><template is="dom-if" strip-whitespace="" class="style-scope google-codelab"></template><template is="dom-if" strip-whitespace="" class="style-scope google-codelab"></template></div></div></footer></div>
+</div>
+</app-header-layout>
+</div>
+<app-drawer id="drawer" swipe-open="" class="style-scope google-codelab x-scope app-drawer-0" position="left" persistent="" opened="" style="transition-duration: 200ms; touch-action: pan-y;">
+
+<div id="scrim" class="style-scope app-drawer" style="transition-duration: 200ms;"></div>
+<div id="contentContainer" class="style-scope app-drawer" style="transition-duration: 200ms;">
+<div class="drawer-content-wrapper layout vertical style-scope google-codelab" style="height:100%"><div class="flex style-scope google-codelab" style="overflow:auto;"><div title="Time remaining" class="countdown layout horizontal style-scope google-codelab" hidden=""><iron-icon icon="schedule" class="style-scope google-codelab x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" class="style-scope iron-icon"></path></g></svg>
+
+</iron-icon><span class="style-scope google-codelab">0 min remaining</span></div><paper-menu id="toc" class="flex style-scope google-codelab x-scope paper-menu-0" role="menu" tabindex="0">
+
+
+<div class="selectable-content style-scope paper-menu">
+<paper-item class="toc-item style-scope google-codelab x-scope paper-item-0 iron-selected" role="option" tabindex="0" aria-disabled="false" aria-selected="true">
+
+
+<i class="style-scope google-codelab">1</i><span class="style-scope google-codelab">Welcome</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">2</i><span class="style-scope google-codelab">Get set up</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">3</i><span class="style-scope google-codelab">Test the page</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">4</i><span class="style-scope google-codelab">Set the visual viewport</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">5</i><span class="style-scope google-codelab">Use media queries</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">6</i><span class="style-scope google-codelab">Using Flexbox</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">7</i><span class="style-scope google-codelab">Using Flexbox as a progressive enhancement</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">8</i><span class="style-scope google-codelab">Congratulations!</span>
+</paper-item><paper-item class="toc-item style-scope google-codelab x-scope paper-item-0" role="option" tabindex="-1" aria-disabled="false">
+
+
+<i class="style-scope google-codelab">9</i><span class="style-scope google-codelab">Next codelab</span>
+</paper-item><template is="dom-repeat" strip-whitespace="" class="style-scope google-codelab"></template>
+</div>
+</paper-menu></div><div id="metadata" class="style-scope google-codelab"><template is="dom-if" strip-whitespace="" class="style-scope google-codelab"></template><div id="feedback" class="style-scope google-codelab" hidden="">
+Did you find a mistake?
+<a target="_blank" class="style-scope google-codelab" href="">Please file a bug</a>.
+</div></div></div>
+</div>
+</app-drawer>
+<iron-media-query class="style-scope app-drawer-layout" style="display: none;"></iron-media-query>
+</app-drawer-layout><paper-dialog id="resumeDialog" modal="" class="style-scope google-codelab x-scope paper-dialog-0" role="dialog" tabindex="-1" style="outline: none; position: fixed; top: 223.703px; left: 403.227px; box-sizing: border-box; max-height: 609px; max-width: 1286px; display: none;" aria-hidden="true">
+
+<h2 class="style-scope google-codelab">Would you like to resume where you left off?</h2><p class="style-scope google-codelab">Step <span class="style-scope google-codelab"></span>: <span class="style-scope google-codelab"></span></p><div class="buttons style-scope google-codelab"><paper-button dialog-dismiss="" class="style-scope google-codelab x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">Cancel<paper-ripple class="style-scope paper-button">
+
+<div id="background" class="style-scope paper-ripple" style="opacity: 0.000548;"></div>
+<div id="waves" class="style-scope paper-ripple"></div>
+</paper-ripple></paper-button><paper-button dialog-confirm="" autofocus="" class="style-scope google-codelab x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">Resume<paper-ripple class="style-scope paper-button">
+
+<div id="background" class="style-scope paper-ripple"></div>
+<div id="waves" class="style-scope paper-ripple"></div>
+</paper-ripple></paper-button></div>
+</paper-dialog></google-codelab>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-49880327-14', 'auto');
+
+    (function() {
+      var gaCodelab = 'UA-81734179-1';
+      if (gaCodelab) {
+        ga('create', gaCodelab, 'auto', {name: 'codelab'});
+      }
+
+      var gaView;
+      var parts = location.search.substring(1).split('&');
+      for (var i = 0; i < parts.length; i++) {
+        var param = parts[i].split('=');
+        if (param[0] === 'viewga') {
+          gaView = param[1];
+          break;
+        }
+      }
+      if (gaView && gaView !== gaCodelab) {
+        ga('create', gaView, 'auto', {name: 'view'});
+      }
+    })();
+  </script>
+
+
+
+</body></html>
